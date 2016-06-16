@@ -1,10 +1,10 @@
 function onOpen() {
- SpreadsheetApp
-     .getUi()
-     .createMenu('Apps Languages')
-     .addItem('JSON Generator', 'downloadJSON')
-     .addItem('JSON Show', 'showJSON')
-     .addToUi();
+  SpreadsheetApp
+      .getUi()
+      .createMenu('Apps Languages')
+      .addItem('JSON Generator', 'downloadJSON')
+      .addItem('JSON Show', 'showJSON')
+      .addToUi();
 };
 
 function showJSON() {

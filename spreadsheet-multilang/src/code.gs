@@ -1,6 +1,8 @@
-var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+var
+    spreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+    ;
 
-function parseMessages(prefix, value) {
+function flattenMessages(prefix, value) {
 
     var messages = {};
     var prefixedKey = "";
@@ -21,8 +23,8 @@ function genJSON() {
         sheet = spreadsheet.getActiveSheet(),
         rows = sheet.getDataRange(),
         numRows = rows.getNumRows(),
-        numCols = rows.getNumColumns(),
-        values = rows.getValues()
+        numCols = rows.getNumColumns();
+    values = rows.getValues()
     ;
 
     for (var i = 1; i < numRows; i++) {
@@ -32,7 +34,7 @@ function genJSON() {
             var value = values[i][c].trim();
 
             messages[values[0][c]] = messages[values[0][c]] || {};
-            _.merge(messages[values[0][c]], parseMessages(prefix, value));
+            _.merge(messages[values[0][c]], flattenMessages(prefix, value));
         }
     }
 
@@ -44,8 +46,8 @@ function downloadJSON() {
         messages = genJSON(),
         sheet = spreadsheet.getActiveSheet(),
         rows = sheet.getDataRange(),
-        numCols = rows.getNumColumns(),
-        values = rows.getValues(),
+        numCols = rows.getNumColumns();
+    values = rows.getValues(),
         blobs = []
     ;
 
