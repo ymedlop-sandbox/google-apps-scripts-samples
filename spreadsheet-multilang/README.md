@@ -11,7 +11,7 @@ code editor:
 
 1. Click on the menu item "Resources > Libraries..."
 2. In the "Find a Library" text box, enter the project key
-   `MlIuRG8zOGLen5XnpcrwEiVK-MuOy901F` and click the "Select" button.
+   `1PTLE8IOkoLWFUXkFpKaxZePKndWN88A2xQozJOG9rm2fK6yC1Ii0TUUz` and click the "Select" button.
 3. Choose a version in the dropdown box (usually best to pick the latest
    version).
 4. Click the "Save" button.
