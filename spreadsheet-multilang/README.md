@@ -19,9 +19,19 @@ code editor:
 
 ```
 function onOpen() {
-  // Library ID
-  ymedlopmultilang.onOpen();
+  	// Library ID: onOpen method
+    ymedlopmultilang.onOpen();
 };
+
+function showJSON() {
+	// Library ID: showJSON method
+    ymedlopmultilang.showJSON();
+}
+
+function downloadJSON() {
+	// Library ID: downloadJSON method
+    ymedlopmultilang.downloadJSON();
+}
 ```
 
 Alternatively, you can copy and paste the files in the [`/src`](src) directory
